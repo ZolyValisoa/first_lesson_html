@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+<html>
+<head>
+<title>Deuxième exercice</title>
+</head>
+<body>
+
+<h1>Formulaire</h1>
+<p>Dans cette exercice il faut regarder les composantes suivante :</p>
+<ul>
+  <li>L'élément HTML form</li>
+  <li>L'élément HTML label</li>
+  <li>L'élément HTML div</li>
+  <li>Les éléments HTML de type input</li>
+</ul>
+<hr>
+<h2>Remarques</h2>
+<ul>
+  <li>Remarquer que, pour l'âge le nombre ne doit pas être inférieur à zéro</li>
+  <li>La valeur femme doit être coché par défaut.</li>
+  <li>Le bouton "Choisir un fichier" doit ouvrir l'explorateur de fichier après un click.</li>
+  <li>La valeur saisie dans le champ email doit être un email valide.</li>
+  <li>La valeur saisie dans le champ mots de passe ne dois pas être visibles</li>
+  <li>Après, clique sur le bouton "Effacer la saisie", tout information saisie doivent tous être effacé.</li>
+  <li>Après click sur le bouton valider, l'url doit montrer les informations saisies dans les champs.</li>
+  <li>Le nom et l'age sont obligatoires.</li>
+</ul>
+<hr>
+
+<form action="/action_page.php">
+  <div>
+    <label for="fname">Nom </label>
+    <input type="text" id="fname" name="fname" required><br>
+  </div>
+  <br>
+  
+  <div>
+    <label for="lname">Prénom </label>
+    <input type="text" id="lname" name="lname"><br>
+  </div>
+  <br>
+  
+  <div>
+    <label for="adress">Adress </label>
+    <input type="text" id="adress" name="adress">
+  </div>
+  
+  <div>  
+  <p>Sex :</p>
+    <input type="radio" id="sex" name="sex_choice" value="F" checked>
+    <label for="sex">F</label>
+    <input type="radio" id="sex" name="sex_choice" value="M">
+    <label for="sex">M</label>
+  </div>
+  <br>
+
+  <div>
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" min="0" required>
+  </div>
+  <br>
+
+  <div>
+    <label for="email">email </label>
+    <input type="email" id="email" name="email">
+  </div>
+  <br>
+
+  <div>
+    <label for="pwd">Mot de passe </label>
+    <input type="password" id="pwd" name="pwd">
+  </div>
+  <br>
+
+  <div>
+    <label for="pwd">Confirmer mot de passe </label>
+    <input type="password" id="pwd" name="pwd">
+  </div>
+  <br>
+
+  <div>
+    <label for="myfile">Importer une image </label>
+    <input type="file" id="myfile" name="myfile">
+  </div>
+  <br>
+
+  <div>
+    <label for="comments">Commentaires </label>
+    <textarea name="comments" rows="10" cols="30">
+    </textarea>
+  </div>
+  <br>
+
+  <div>
+    <input type="checkbox" id="check" name="check" value="Yes">
+    <label for="check"> J'ai fais la verification </label>
+  </div>
+  <br>
+
+  <div>
+    <input type="reset" value="Effacer la saisie">
+    <input type="submit" value="Valider">
+  </div>
+  
+</form>
+
+</body>
 </html>
